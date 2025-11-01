@@ -1,0 +1,109 @@
+/* Global Styles for Alchemix Website */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Layout Wrapper */
+.App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section Defaults */
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Buttons (shared styling) */
+button {
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #111;
+}
+
+p {
+  color: #555;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer (if you add one) */
+footer {
+  background: #f3f6fa;
+  text-align: center;
+  padding: 30px;
+  color: #555;
+  font-size: 14px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  section {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .details-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
